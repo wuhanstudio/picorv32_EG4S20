@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+    <Project_Created_Time>2019-12-05 16:24:31</Project_Created_Time>
+    <TD_Version>4.2.285</TD_Version>
+    <UCode>11010011</UCode>
+    <Name>RISC_V</Name>
+    <HardWare>
+        <Family>EG4</Family>
+        <Device>EG4S20BG256</Device>
+    </HardWare>
+    <Source_Files>
+        <Verilog>
+            <File>al_ip/rom.v</File>
+            <File>al_ip/pll.v</File>
+            <File>al_ip/soc_mem.v</File>
+            <File>al_ip/sdram.v</File>
+            <File>al_ip/al_cpuregs.v</File>
+        </Verilog>
+        <ADC_FILE>RISC_V.adc</ADC_FILE>
+        <SDC_FILE>RISC_V.sdc</SDC_FILE>
+        <CWC_FILE>risc_v.cwc</CWC_FILE>
+    </Source_Files>
+    <TOP_MODULE>
+        <LABEL/>
+        <MODULE>al_cpureg</MODULE>
+        <CREATEINDEX>auto</CREATEINDEX>
+    </TOP_MODULE>
+    <Property>
+        <RouteProperty>
+            <sdf>on</sdf>
+        </RouteProperty>
+        <GateProperty>
+            <opt_timing>high</opt_timing>
+            <pack_effort>high</pack_effort>
+        </GateProperty>
+    </Property>
+    <Project_Settings>
+        <Step_Last_Change>2020-04-28 15:34:31</Step_Last_Change>
+        <Current_Step>0</Current_Step>
+        <Step_Status>true</Step_Status>
+    </Project_Settings>
+</Project>

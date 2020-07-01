@@ -10,11 +10,18 @@
     </HardWare>
     <Source_Files>
         <Verilog>
-            <File>al_ip/rom.v</File>
-            <File>al_ip/pll.v</File>
-            <File>al_ip/soc_mem.v</File>
-            <File>al_ip/sdram.v</File>
+            <File>../picosoc32.v</File>
             <File>al_ip/al_cpuregs.v</File>
+            <File>../simpleuart.v</File>
+            <File>../spimemio.v</File>
+            <File>../hx8kdemo.v</File>
+            <File>al_ip/sdram.v</File>
+            <File>al_ip/rom.v</File>
+            <File>al_ip/soc_mem.v</File>
+            <File>al_ip/pll.v</File>
+            <File>../picorv32.v</File>
+            <File>../picosoc_sdram.v</File>
+            <File>../sdram_sdram.v</File>
         </Verilog>
         <ADC_FILE>RISC_V.adc</ADC_FILE>
         <SDC_FILE>RISC_V.sdc</SDC_FILE>
@@ -22,8 +29,8 @@
     </Source_Files>
     <TOP_MODULE>
         <LABEL/>
-        <MODULE>al_cpureg</MODULE>
-        <CREATEINDEX>auto</CREATEINDEX>
+        <MODULE>hx8kdemo</MODULE>
+        <CREATEINDEX>user</CREATEINDEX>
     </TOP_MODULE>
     <Property>
         <RouteProperty>
@@ -35,7 +42,7 @@
         </GateProperty>
     </Property>
     <Project_Settings>
-        <Step_Last_Change>2020-04-28 15:34:31</Step_Last_Change>
+        <Step_Last_Change>2020-06-22 15:50:59</Step_Last_Change>
         <Current_Step>0</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>

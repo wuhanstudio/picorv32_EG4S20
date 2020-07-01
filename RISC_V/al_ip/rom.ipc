@@ -21,7 +21,7 @@
     </PortAOption>
     <MemoryInitialization>
         <init_file_enable>true</init_file_enable>
-        <init_file>../../cpu.mif</init_file>
+        <init_file>../../RISC_V.mif</init_file>
     </MemoryInitialization>
     <FillMemoryInitValues>
         <fill_all>NONE</fill_all>

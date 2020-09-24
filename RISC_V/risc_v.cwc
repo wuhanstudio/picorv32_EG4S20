@@ -1,7 +1,7 @@
-<chipwatcher project_name="RISC_V" bit_file="RISC_V.bit">
+<chipwatcher project_name="RISC_V" bit_file="RISC_V.bit" bid_file="RISC_V_inst.bid" chip_name="EG4S20BG256">
 	<instance name="auto_chipwatcher_0" id="0" enabled="yes">
 		<clock clk_name="sdram_clk" polarity="posedge"/>
-		<config bram_type="" sample_depth="512"/>
+		<config bram_name="auto_chipwatcher_0_logicbram" sample_depth="512"/>
 		<signal_vec>
 			<trigger_nets>
 				<net name="flash_clk"/>

@@ -198,7 +198,7 @@ module picosoc32 (
 	);
 
 	localparam ROM_ORIGIN = 32'h20000;  //
-	localparam ROM_SIZE = 16*1024;  // 16K ROM
+	localparam ROM_SIZE = 32*1024;  // 16K ROM
     assign rom_valid = mem_valid && (mem_addr >= ROM_ORIGIN )&&(mem_addr <= ROM_ORIGIN+ROM_SIZE);
 	pico_rom #(
 		.WORDS(ROM_SIZE)
@@ -206,7 +206,7 @@ module picosoc32 (
 	.valid(rom_valid),
 	.clk(clk),
 	.wen(rom_valid? mem_wstrb : 4'b0),
-	.addr(mem_addr[15:2]),
+	.addr(mem_addr[16:2]),
 	.wdata(mem_wdata),
 	.ready(rom_ready),
 	.rdata(rom_rdata)

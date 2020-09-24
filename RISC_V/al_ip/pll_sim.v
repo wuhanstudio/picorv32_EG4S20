@@ -1,8 +1,8 @@
-// Verilog netlist created by TD v4.2.285
-// Mon Apr 13 17:16:10 2020
+// Verilog netlist created by TD v4.3.633
+// Fri Jul 31 10:52:51 2020
 
 `timescale 1ns / 1ps
-module pll  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(23)
+module pll  // al_ip/pll.v(23)
   (
   refclk,
   reset,
@@ -10,16 +10,16 @@ module pll  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(23)
   clk1_out
   );
 
-  input refclk;  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(28)
-  input reset;  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(29)
-  output clk0_out;  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(30)
-  output clk1_out;  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(31)
+  input refclk;  // al_ip/pll.v(28)
+  input reset;  // al_ip/pll.v(29)
+  output clk0_out;  // al_ip/pll.v(30)
+  output clk1_out;  // al_ip/pll.v(31)
 
-  wire clk0_buf;  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(33)
+  wire clk0_buf;  // al_ip/pll.v(33)
 
   EG_PHY_GCLK bufg_feedback (
     .clki(clk0_buf),
-    .clko(clk0_out));  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(35)
+    .clko(clk0_out));  // al_ip/pll.v(35)
   EG_PHY_CONFIG #(
     .DONE_PERSISTN("ENABLE"),
     .INIT_PERSISTN("ENABLE"),
@@ -27,16 +27,16 @@ module pll  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(23)
     .PROGRAMN_PERSISTN("DISABLE"))
     config_inst ();
   EG_PHY_PLL #(
-    .CLKC0_CPHASE(20),
-    .CLKC0_DIV(20),
+    .CLKC0_CPHASE(12),
+    .CLKC0_DIV(13),
     .CLKC0_DIV2_ENABLE("DISABLE"),
     .CLKC0_ENABLE("ENABLE"),
     .CLKC0_FPHASE(0),
-    .CLKC1_CPHASE(15),
-    .CLKC1_DIV(20),
+    .CLKC1_CPHASE(8),
+    .CLKC1_DIV(13),
     .CLKC1_DIV2_ENABLE("DISABLE"),
     .CLKC1_ENABLE("ENABLE"),
-    .CLKC1_FPHASE(0),
+    .CLKC1_FPHASE(6),
     .CLKC2_CPHASE(1),
     .CLKC2_DIV(1),
     .CLKC2_DIV2_ENABLE("DISABLE"),
@@ -55,7 +55,7 @@ module pll  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(23)
     .DERIVE_PLL_CLOCKS("DISABLE"),
     .DPHASE_SOURCE("DISABLE"),
     .DYNCFG("DISABLE"),
-    .FBCLK_DIV(2),
+    .FBCLK_DIV(3),
     .FEEDBK_MODE("NORMAL"),
     .FEEDBK_PATH("CLKC0_EXT"),
     .FIN("25.000"),
@@ -105,7 +105,7 @@ module pll  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(23)
     .refclk(refclk),
     .reset(reset),
     .stdby(1'b0),
-    .clkc({open_n47,open_n48,open_n49,clk1_out,clk0_buf}));  // E:/WORK/RISC_V_TEST/RISC_V/al_ip/pll.v(78)
+    .clkc({open_n47,open_n48,open_n49,clk1_out,clk0_buf}));  // al_ip/pll.v(62)
 
 endmodule 
 

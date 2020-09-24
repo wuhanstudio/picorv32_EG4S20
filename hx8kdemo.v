@@ -278,14 +278,14 @@ module pico_rom #(
 	input valid,
 	input clk,
 	input [3:0] wen,
-	input [13:0] addr,
+	input [14:0] addr,
 	input [31:0] wdata,
 	output reg ready,
 	output  [31:0] rdata
 );
 rom  picrv_rom(
 	.rsta(0),
-	.addra(addr[12:0]),
+	.addra(addr[13:0]),
 	.clka(clk),
 	.doa(rdata));
 	initial begin

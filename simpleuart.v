@@ -74,7 +74,7 @@ module simpleuart (
 	
 	always @(posedge clk) begin
 		if (!resetn) begin
-			cfg_divider <= 5208;
+			cfg_divider <= 651;
 		end else begin
 			if (reg_div_we[0]) cfg_divider[ 7: 0] <= reg_div_di[ 7: 0];
 			if (reg_div_we[1]) cfg_divider[15: 8] <= reg_div_di[15: 8];

@@ -33,7 +33,7 @@ module rom ( doa, addra, clka, rsta );
 				.RESETMODE("SYNC"),
 				.DEBUGGABLE("NO"),
 				.PACKABLE("NO"),
-				.INIT_FILE("../../RISC_V.mif"),
+				.INIT_FILE("../../firmware/rt-thread.mif"),
 				.FILL_ALL("NONE"))
 			inst(
 				.dia({32{1'b0}}),

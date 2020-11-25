@@ -1,9 +1,8 @@
-set_pin_assignment {clk_in} { LOCATION = A9;  }
-set_pin_assignment {reset_n} { LOCATION = E3;  }
+set_pin_assignment {clk_in} { LOCATION = K14;  }
+set_pin_assignment {reset_n} { LOCATION = K16;  }
 #set_pin_assignment {run_led} { LOCATION = F4;  }
-set_pin_assignment {ser_tx} { LOCATION = F5;  }
-set_pin_assignment {key} { LOCATION = R1;  }
-set_pin_assignment {ser_rx} { LOCATION = F4;  }
+set_pin_assignment {ser_tx} { LOCATION = J13;  }
+set_pin_assignment {ser_rx} { LOCATION = H13;  }
 set_pin_assignment {flash_clk} { LOCATION = R11;  }
 set_pin_assignment {flash_csb} { LOCATION = T3;  }
 set_pin_assignment {flash_io0} { LOCATION = T10;  }

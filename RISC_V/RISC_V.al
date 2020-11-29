@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
     <Project_Created_Time>2019-12-05 16:24:31</Project_Created_Time>
-    <TD_Version>4.5.12562</TD_Version>
-    <UCode>10100110</UCode>
+    <TD_Version>4.6.18154</TD_Version>
+    <UCode>01111010</UCode>
     <Name>RISC_V</Name>
     <HardWare>
         <Family>EG4</Family>
@@ -42,7 +42,7 @@
         </GateProperty>
     </Property>
     <Project_Settings>
-        <Step_Last_Change>2020-11-25 10:32:55</Step_Last_Change>
+        <Step_Last_Change>2020-11-28 16:51:59</Step_Last_Change>
         <Current_Step>60</Current_Step>
         <Step_Status>true</Step_Status>
     </Project_Settings>

@@ -34,7 +34,6 @@ module picosoc_sdram (
 					(read_stat) ? za_valid		: 
 					0;
 	
-	// 读状态控�
 always @(posedge clk )begin
 	if(!resetn)	
 		read_stat <= 0;

@@ -60,7 +60,7 @@ module picosoc (
 
 	parameter integer MEM_WORDS = 4096;
 	parameter [31:0] STACKADDR = (4*MEM_WORDS);       // end of memory
-	parameter [31:0] PROGADDR_RESET = 32'h 0002_0000; // 1 MB into flash
+	parameter [31:0] PROGADDR_RESET = 32'h 0002_0000; // program address
 	parameter [31:0] PROGADDR_IRQ = 32'h 0000_0100;
 
 	reg [31:0] irq;
@@ -134,8 +134,6 @@ module picosoc (
 	.clock(clk),
 	.q(rom_rdata));
 
-	
-	
 	simpleuart simpleuart (
 		.clk         (clk         ),
 		.resetn      (resetn      ),
@@ -242,6 +240,3 @@ soc_mem mem (
 		end
 	end
 endmodule
-
-
-

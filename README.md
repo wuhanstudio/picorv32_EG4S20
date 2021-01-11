@@ -1,3 +1,5 @@
+> One repo contains both picorv32 and RT-Thread is available here: https://github.com/wuhanstudio/picorv32_tang
+
 # Picorv32 + RT-Thread on Lichee Tang (EG4S20)
 
 ```
